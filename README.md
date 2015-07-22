@@ -52,7 +52,8 @@ Available projections:
 
 To use other datums and projections, instantiate Mercator::Datum and Mercator::Projection objects and assign suitable parameters, e.g. (for SWEREF 99 TM above):
 
-```datum = Mercator::Datum.new
+```
+datum = Mercator::Datum.new
 datum.semi_major_axis = 6378137.0
 datum.inverse_flattening = 298.257223563
 
