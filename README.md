@@ -22,7 +22,8 @@ Or install it yourself as:
 
 Consider the following code:
 
-```require 'mercator'
+```
+require 'mercator'
 datum = Mercator::WGS84.new
 projection = Mercator::Sweref99TM.new
 Mercator.grid_to_spherical(6097106.672, 356083.438, datum, projection)
