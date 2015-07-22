@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require 'mercator'
+
+if ARGV.length < 2
+  puts <<-END.gsub(/^ {4}/, '')
+    Usage:
+  
+      sweref99tm x y
+  
+    Where x and y are the grid coordinates using SWEREF 99 TM. This will
+    output the latitude and longitude of the coordinates supplied. No
+    checks will be made as to whether the supplied coordinates are valid
+    or not.
+    
+    Example:
+    
+      sweref99tm 6097106.672 356083.438
+
+    END
+    exit
+end
+
+datum = Mercator::WGS84.new
+projection = Mercator::Sweref99TM.new
+p Mercator.grid_to_spherical(ARGV[0].to_f, ARGV[1].to_f, datum, projection)
