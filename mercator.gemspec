@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Martin Bergek"]
   spec.email         = ["contact@spotwise.com"]
   spec.summary       = %q{Tools to manage spherical to grid conversions}
-  spec.description   = %q{This library provides classes and methods to perform conversions between spherical and grid coordinates.}
+  spec.description   = %q{Tools to perform conversions between spherical and grid coordinates using the Gauss conformal projection (transverse Mercator).}
   spec.homepage      = "https://github.com/mbergek/mercator"
   spec.license       = "MIT"
 
