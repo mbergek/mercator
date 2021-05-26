@@ -18,8 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.7"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "bundler", "~> 2.2.10"
+  spec.add_development_dependency "rake", "~> 12.3.3"
   spec.add_development_dependency 'minitest', '~> 4.7', '>= 4.7.3'
   spec.add_runtime_dependency 'tilt', '~> 1.4', '>= 1.4.1'
   spec.add_runtime_dependency 'redcarpet', '~> 3.3', '>= 3.3.2'
